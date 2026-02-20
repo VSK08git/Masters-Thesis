@@ -1,2 +1,8 @@
-# Masters-Thesis
-Python code for my M.Sc. thesis: Multiwavelength spectral study of Mrk 421using X-ray polarization. Includes data reduction, correlation analysis, polarization studies, and SED modeling with one- and two-zone SSC (JetSet). 
+Multiwavelength study of the spectral behaviour of Mrk 421 incorporating X-ray measurements
+parameter_file.txt contains parameters with their values used during the MAGIC data analysis.
+The LC_MRK421.ipynb file contains the light curve data obtained from MAGIC data analysis along with HE (GeV) data and X-ray.
+The CORRELATION.ipynb file contains calculation related to correlation between VHE and X-ray flux, fractional variability, Pearson's correlation coefficient, Discrete Correlation Function (DCF) and plot of VHE - X-ray flux correlation.
+LC_SED_MRK421.ipynb file contains the code to extract polarization data from the files and plot the same. The flux and polarization data, polarization ratios along with the the parameters obtained from the SED modelling of the IXPE observation window are plotted in this file. The calculation for the radius of the compact zone of each day during the IXPE window is carried out.
+SPECTRAL_VARIABILITY.ipynb file contains the plots of evolution of the spectral index. It also contains calculation and plots hardness ratio for VHE and X-ray data. The script performs linear regressions and curve fitting to determine if the source exhibits "harder-when-brighter" behavior. The file also includes spectral index vs flux plots to investigate the changes in spectral index along with the changes in the flux.
+SED_DATA.ipynb file contains a script to concatenate the SED data from different telescopes to create the SED of each IXPE observations day and save it in a text file.
+SED_MODELLING.ipynb file contains the code to fit the SED using JetSeT python package. It includes different electron energy distributions defined for the modeling purpose. It includes SEDs of the 10 IXPE observation days the parameters obtained from fitting, plots showing evolution of the fitted parameters and MCMC procedure performed to optimize the constrains. 
